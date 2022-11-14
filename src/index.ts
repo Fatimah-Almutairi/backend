@@ -54,3 +54,4 @@ function isNumber (str: string): boolean
     return isNum;
 }
 main()
+// --------------------------- Q2
