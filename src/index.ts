@@ -1,3 +1,4 @@
+// -----------------------------------  Q1
 import {question} from 'readline-sync';
 type Operator = '+' | '-' | '*' | '/';
 
