@@ -1,10 +1,11 @@
 "use strict";
 exports.__esModule = true;
+// -----------------------------------  Q1
 var readline_sync_1 = require("readline-sync");
 function main() {
     var fStr = (0, readline_sync_1.question)('enter first number:\n');
     var operator = (0, readline_sync_1.question)('enter operator:\n');
-    var lStr = (0, readline_sync_1.question)('enter first number:\n');
+    var lStr = (0, readline_sync_1.question)('enter last number:\n');
     var validInput = isNumber(fStr) && isOperator(operator) && isNumber(lStr);
     if (validInput) {
         var fNum = parseInt(fStr);
@@ -46,3 +47,21 @@ function isNumber(str) {
     return isNum;
 }
 main();
+var user1 = {
+    Name: 'Fatimah',
+    Age: 27,
+    Specialization: 'IT'
+};
+var user2 = {
+    Name: 'Bassam',
+    Age: 9,
+    Specialization: 'Doctor'
+};
+var user3 = {
+    Name: 'Mohammed',
+    Age: 37,
+    Specialization: 'Engineer'
+};
+console.log(user1.Name);
+console.log(user3.Age);
+console.log(user2.Specialization);

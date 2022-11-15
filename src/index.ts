@@ -6,7 +6,7 @@ type Operator = '+' | '-' | '*' | '/';
 function main () :void{
     const fStr : string = question ('enter first number:\n');
     const operator : string = question ('enter operator:\n');
-    const lStr : string = question ('enter first number:\n');
+    const lStr : string = question ('enter last number:\n');
 
     const validInput :boolean = isNumber(fStr) && isOperator(operator) && isNumber(lStr);
 
@@ -56,3 +56,29 @@ function isNumber (str: string): boolean
 }
 main()
 // --------------------------- Q2
+
+interface User {
+    Name: String,
+    Age: Number,
+    Specialization: String
+}
+
+const user1: User = {
+    Name: 'Fatimah',
+    Age: 27,
+    Specialization: 'IT'
+}
+const user2: User = {
+    Name: 'Bassam',
+    Age: 9,
+    Specialization: 'Doctor'
+}
+const user3: User = {
+    Name: 'Mohammed',
+    Age: 37,
+    Specialization: 'Engineer'
+}
+
+console.log(user1.Name)
+console.log(user3.Age)
+console.log(user2.Specialization)
